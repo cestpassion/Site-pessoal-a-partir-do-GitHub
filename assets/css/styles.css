@@ -1,70 +1,231 @@
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    color: rgb(91, 50, 145);
-    background-color: rgb(27, 27, 27);
-  }
+/* ----------------- ESTILO GERAL ----------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color:rgb(14, 14, 14);
+  color: #fff;
+}
+
+body a{
+  display: inline-block;
+  transition: .4s;
+}
+
+body a:hover{
+  transform: scale(1.05);
+  text-shadow: 0px -1px 2px rgb(26, 14, 43);
+}
+
+main{
+  padding-top: 6%;
+}
+
+.linha {
+  border: none;
+  height: 4px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+body :is(.titulo,.linha){
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.roxo {
+  color: rgb(131, 71, 209);
+  text-shadow: 0px 0px 5px rgba(131, 71, 209, 0.678);
+}
+
+/* ----------------- ESTILO DO HEADER (MENU NAVEGAÇÃO) ----------------- */
+
+header{
+  position: fixed; 
+  z-index: 100;
+  display:block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 50%);
+}
+
+header .interface {
+  margin: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .links-secoes a{
+  color: #fff;
+  border-bottom: 3px solid transparent;
+}
+
+header .links-secoes a:hover,
+header .links-secoes a:active{
+  color: rgb(115, 63, 184);
+  text-shadow: 0px 0px 8px rgba(141, 91, 206, 0.678);
+  border-bottom: 3px solid rgb(115, 63, 184);
+}
+
+header .logo h1{
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .logo .brilho{
+  color: rgb(131, 71, 209);
+  text-shadow: 0px 0px 10px rgba(131, 71, 209, 0.747);
+}
+   
+header nav .links-secoes{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 40px;
+  margin: 10px;
+}
+
+header .menu-icon{
+  font-size: 30px;
+  display: none;
   
-  body {
-    background-color: black;
-  }
+}
   
-  #links_secoes {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+/* ----------------- ESTILO DA SEÇÃO PERFIL ----------------- */
   
-  /* Seção 1 */
-  
-  #perfil {
-    margin: 20px;
-    color: aliceblue;
+section#perfil {
+  padding-bottom: 2%;
+  padding-top: 1%;
+}
+   
+section#perfil .conteudo-perfil {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10%;
+  margin: 30px;
+}
+
+section#perfil .conteudo-perfil .foto-perfil img{
+    border-radius: 30px;
+    box-shadow: 6px 6px 9px rgb(0 0 0 / 40%);
+    width: 400px;
+}
+
+section#perfil .conteudo-perfil .infos-perfil{
+  padding-top: 5%;
+}
+
+@media (max-width: 1380px) {
+  section#perfil .conteudo-perfil .infos-perfil{
+    padding-top: 2%;
   }
+}
+
+section#perfil .infos-perfil .txt-perfil h3{
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.747);
+}
+
+section#perfil .infos-perfil .txt-perfil p{
+  font-size: 17px;
+}
+
+section#perfil .conteudo-perfil #local_site_acessos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section#perfil .conteudo-perfil .redes-sociais {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100px;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+section#perfil .conteudo-perfil .redes-sociais .iconlinkedin img{
+  border-radius: 3px;
+}
+
+section#perfil .conteudo-perfil .redes-sociais .icongithub img{
+  border-radius: 15px;
+}
+
+section#perfil .conteudo-perfil .redes-sociais .iconinstagram img{
+  border-radius: 6px;
+}
+
+section#perfil .conteudo-perfil .redes-sociais img{ 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: .10s; /* NÃO ESTÁ FUNCIONANDO */
+  box-shadow: 5px 5px 8px rgb(0 0 0 / 40%);
+}
+
+section#perfil .conteudo-perfil .redes-sociais img:hover{
+  transform: scale(1.05);
+  box-shadow: -5px -5px -8px rgb(0 0 0 / 40%);
+}
   
-  .Rooxo {
-    color: rgb(91, 50, 145);
-  }
-  
-  #conteudo_perfil {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 3%;
-    margin: 30px;
-  }
-  
-  #local_site_acessos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  #icons_socialmedia {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  
-  .redes_sociais {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .acessos_icon {
-    width: 25px;
-    height: 25px;
-  }
+section#perfil .botao button{
+  padding: 1px 5px;
+  font-weight: bold;
+  color: rgb(131, 71, 209);
+  text-shadow: 0px 0px 5px rgba(131, 71, 209, 0.678);
+  box-shadow: 0px 0px 5px rgba(131, 71, 209, 0.678);
+  background: transparent;
+  border: solid 2px rgb(131, 71, 209);
+  border-radius: 13px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .4s; /* NÃO ESTÁ FUNCIONANDO */
+}
+
+section#perfil button:hover{
+  color: rgb(14, 14, 14);
+  background: rgb(131, 71, 209);
+  box-shadow: 0px 0px 8px rgba(131, 71, 209, 0.822);
+}
   
   /* Seção 2 */
   
-  #repositorios {
-    margin: 20px;
-  }
-  
-  #cartoes_bootstrap {
+#repositorios {
+  background-color:rgb(0, 0, 0);
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+#cartoes_bootstrap {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -93,9 +254,10 @@ nav {
   
   /* Seção 3 */
   
-  #carousel {
-    margin: 20px;
-  }
+#carousel {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
 
   .carousel_imagem{
     width: 100%;
@@ -119,9 +281,11 @@ nav {
   
   /* Seção 4 */
   
-  #colegas {
-    margin: 20px;
-  }
+#colegas {
+  background-color:rgb(0, 0, 0);
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
   
   #conteudo_colegas {
     display: flex;
@@ -161,19 +325,29 @@ nav {
   
   /* Repositórios: */
   
-  #conteudo {
-    margin: 20px;
+  section#repo {
+    padding-bottom: 2%;
+    padding-top: 90px;
+  }
+
+  section#repo .conteudo{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
   
-  .cor_branca {
+  section#repo .cor_branca {
     color: aliceblue;
   }
   
-  .linha {
+  section#repo .linha {
     border: none;
     height: 4px;
     background-color: white;
     margin: 20px 0;
+  }
+
+  section#repo .data{
+    padding-top: 20px;
   }
   
   /* Media queries for responsiveness */

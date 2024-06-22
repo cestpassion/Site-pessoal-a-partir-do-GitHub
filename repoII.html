@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela 1 - Homepage</title>
+    <title>Repositório 2</title>
 <!-- Conexão bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!-- Conexão com página de css --> 
@@ -12,55 +12,67 @@
 </head>
 
 <body>
-<!-- Menu navegação -->
-    <nav>
-        <div>
-            <h1>Bruna Furtado</h1>
-        </div>
+    <!-- MENU NAVEGAÇÃO -->
+    <header>
+        <div class="interface">
 
-        <div id="links_secoes">
-            <span><a href="index.html#perfil">Perfil</a></span>
-            <span><a href="index.html#repositorios">Repositórios</a></span>
-            <span><a href="index.html#carousel">Conteúdo sugerido</a></span>
-            <span><a href="index.html#colegas">Colegas de trabalho</a></span>
-        </div>
+            <div class="logo">
+                <a href="#">
+                    <h1>Bruna <span class="brilho">Furtado</span></h1>
+                </a>
+            </div>
+            
+            <i class="bi bi-list menu-icon"></i>
 
-    </nav>
+            <nav>
+                <ul class="links-secoes">
+                    <li><a href=".index.html/#perfil">Perfil</a></li>
+                    <li><a href=".index.html/#repositorios">Repositórios</a></li>
+                    <li><a href=".index.html/#carousel">Conteúdo Sugerido</a></li>
+                    <li><a href=".index.html/#colegas">Colegas de Trabalho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <!-- Conteúdo -->
-    <section id="conteudo">
-        <h2 class="Rooxo">Repositório: Divisor</h2>
+    <section id="repo">
+        <h2 class="titulo roxo">Repositório: Divisor</h2>
         <hr class="linha">
-        <div id="descricao">
-            <div>
-                <p><strong class="Rooxo">Descrição:</strong></p>
-                <p><div class="cor_branca" class="texto_descricao">Este programa em C recebe um número inteiro N e calcula o número de divisores que N possui baseado na fatoração em fatores primos. Ele utiliza a relação entre os expoentes dos fatores primos e o número de divisores. Após solicitar e ler o número fornecido pelo usuário, o programa inicia um loop que itera de 2 até o valor de N. Dentro deste loop, verifica se o número atual é primo, contando quantos divisores ele possui. Se o número for primo, o programa entra em um loop para calcular quantas vezes esse número primo divide N e incrementa um contador temporário. Ao final, o programa atualiza o número total de divisores multiplicando-o pelo número de vezes que o número primo divide N mais 1, conforme a relação mencionada. Por fim, ele imprime o número total de divisores na tela. O programa encerra sua execução após exibir o resultado.</div></p>
-                </div></p>
+        <div class="conteudo">
+            <div class="descricao">
+                <div>
+                    <p><strong class="roxo">Descrição:</strong></p>
+                    <p><div class="cor_branca" class="texto_descricao">Este programa em C recebe um número inteiro N e calcula o número de divisores que N possui baseado na fatoração em fatores primos. Ele utiliza a relação entre os expoentes dos fatores primos e o número de divisores. Após solicitar e ler o número fornecido pelo usuário, o programa inicia um loop que itera de 2 até o valor de N. Dentro deste loop, verifica se o número atual é primo, contando quantos divisores ele possui. Se o número for primo, o programa entra em um loop para calcular quantas vezes esse número primo divide N e incrementa um contador temporário. Ao final, o programa atualiza o número total de divisores multiplicando-o pelo número de vezes que o número primo divide N mais 1, conforme a relação mencionada. Por fim, ele imprime o número total de divisores na tela. O programa encerra sua execução após exibir o resultado.</div></p>
             </div>
         </div>
-        <div id="data">
+        <div class="data">
             <div>
-                <p><strong class="Rooxo">Data de criação:</strong></p>
+                <p><strong class="roxo">Data de criação:</strong></p>
                 <p><div class="cor_branca"class="texto_data">12/01/2024</div></p>
             </div>
         </div>
-        <div id="linguagem">
+        <div class="linguagem">
             <div>
-                <p><strong class="Rooxo">Linguagem:</strong></p>
+                <p><strong class="roxo">Linguagem:</strong></p>
                 <p><div class="cor_branca"class="texto_data">C++</div></p>
             </div>
         </div>
-        <div id="link_de_acesso">
+        <div class="link_de_acesso">
             <div>
-                <p><strong class="Rooxo">Link de Acesso:</strong></p>
+                <p><strong class="roxo">Link de Acesso:</strong></p>
                 <p><div class="cor_branca"class="texto_data">https://github.com/cestpassion/divisor</div></p>
             </div>
         </div>
-        <div id="topicos">
+        <div class="topicos">
             <div>
-                <p><strong class="Rooxo">Tópicos:</strong></p>
+                <p><strong class="roxo">Tópicos:</strong></p>
             </div>
         </div>
-
+    </div>
     </section>
+    <footer>
+        <p style="margin: 5px;">Bruna Furtado da Fonseca / Aluna - Puc Minas </p>
+    </footer>
 </body>
+</html>
