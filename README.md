@@ -9,4 +9,8 @@ tanto para desktops quanto para dispositivos móveis, utilizando apenas HTML e C
 Este projeto foca no design da interface e no uso das linguagens HTML e CSS para construir um site pessoal estático, sem a utilização de
 JavaScript. O objetivo é praticar e melhorar habilidades em design responsivo e em desenvolvimento front-end básico.
 
+> ### Importante⚠️:
+
+O software ainda está em construção.
+
 
